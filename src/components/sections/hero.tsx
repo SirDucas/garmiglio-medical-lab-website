@@ -36,8 +36,7 @@ export function Hero() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
                     >
-                        Unraveling the complexity of <br className="hidden md:block" />
-                        <span className="text-teal-400">Cancer Evolution</span>
+                        Unraveling the complexity of <span className="text-teal-400">Cancer Evolution</span>
                     </motion.h1>
 
                     <motion.p
