@@ -52,35 +52,54 @@ export function Contact() {
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                             Join Our <span className="text-teal-700">Team</span>
                         </h2>
-                        <div className="prose text-slate-600 mb-8 leading-relaxed">
+                        <div className="prose text-slate-600 mb-8 leading-relaxed text-justify">
                             <p className="mb-4">
-                                We are looking for passionate, highly motivated, and talented staff computational scientists or postdoctoral researchers.
+                                We are looking for passionate, highly motivated and talented staff computational scientists or postdoctoral researchers.
+                                Candidates with PhD or Master’s Degree in statistics, mathematics, computational biology, bioinformatics and informatics
+                                with strong passion for cancer biology are welcome to contact us and potentially join our team.
+                                One to two years research lab experience are required.
                             </p>
-                            <p className="mb-4">
-                                <strong>Requirements:</strong> PhD or Master’s Degree in statistics, mathematics, computational biology, bioinformatics,
-                                or informatics with strong passion for cancer biology. One to two years research lab experience required.
-                            </p>
-                            <h4 className="text-lg font-bold text-slate-900 mt-6 mb-2">Our Values</h4>
-                            <p className="italic text-slate-500 mb-4">
-                                &quot;Our role as PIs is to support your professional development through individualized training plans and help you reach your career goals.&quot;
-                            </p>
-                        </div>
 
-                        <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                                <Mail className="w-6 h-6 text-teal-600 mt-1" />
-                                <div>
-                                    <p className="font-bold text-slate-900">Email Us</p>
-                                    <a href="mailto:si.migliozzi@gmail.com" className="block text-slate-600 hover:text-teal-600">si.migliozzi@gmail.com</a>
-                                    <a href="mailto:lucianogarofano88@gmail.com" className="block text-slate-600 hover:text-teal-600">lucianogarofano88@gmail.com</a>
-                                </div>
+                            <div className="my-6 p-4 bg-teal-50 rounded-lg border-l-4 border-teal-500">
+                                <h4 className="font-bold text-teal-800 mb-2">Contacts</h4>
+                                <a href="mailto:si.migliozzi@gmail.com" className="block text-slate-700 hover:text-teal-700">si.migliozzi@gmail.com</a>
+                                <a href="mailto:lucianogarofano88@gmail.com" className="block text-slate-700 hover:text-teal-700">lucianogarofano88@gmail.com</a>
                             </div>
-                            <div className="flex items-start gap-4">
-                                <MapPin className="w-6 h-6 text-teal-600 mt-1" />
+
+                            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Lab’s mission and values</h3>
+
+                            <div className="space-y-4">
                                 <div>
-                                    <p className="font-bold text-slate-900">Laboratory</p>
-                                    <p className="text-slate-600">GarMiglioLab</p>
-                                    <p className="text-slate-600">United States</p>
+                                    <h4 className="font-semibold text-slate-800">Professional Development</h4>
+                                    <p className="text-sm">
+                                        Our role as PIs is to support your professional development through individualized training plan and help you reach your career goals.
+                                        We will help you promoting your work, establishing a network, and be an advocate for larger administrative issues.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold text-slate-800">Regular Meetings</h4>
+                                    <p className="text-sm">
+                                        We will have regular weekly lab meetings to review the data generated, troubleshoot any technical problems, brainstorm together
+                                        and establish research plans for the subsequent week. Everyone’s opinion is valuable.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold text-slate-800">Collaboration & Teamwork</h4>
+                                    <p className="text-sm">
+                                        Collaboration and teamwork are the keys to impactful research. We seek candidates who are willing to help others as well as
+                                        work together with researchers with different expertise and clinicians to achieve scientific excellence.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold text-slate-800">Open Communication</h4>
+                                    <p className="text-sm">
+                                        Our lab has open door policy to encourage open communication. You can talk to us about any professional or personal issues.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-sm italic font-medium mt-2">
+                                        "Our lab is committed to fostering a respectful, collaborative, and welcoming environment where individuals from all backgrounds can thrive and contribute meaningfully to scientific discovery."
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +110,7 @@ export function Contact() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm"
+                        className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm sticky top-24"
                     >
                         <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a message</h3>
                         <form onSubmit={handleSubmit} className="space-y-4">
