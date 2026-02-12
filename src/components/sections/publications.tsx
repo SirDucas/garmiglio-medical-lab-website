@@ -115,60 +115,62 @@ export function Publications() {
     const displayPublications = showAll ? publications : publications.slice(0, initialCount);
 
     return (
-        <section id="publications" className="py-24 bg-slate-50">
+        <section id="publications" className="py-24 bg-white">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
-                    >
-                        Selected <span className="text-teal-700">Publications</span>
-                    </motion.h2>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Key research findings and scientific contributions.
-                    </p>
-                </div>
+                <div className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100">
+                    <div className="text-center mb-12">
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+                        >
+                            Selected <span className="text-teal-700">Publications</span>
+                        </motion.h2>
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                            Key research findings and scientific contributions.
+                        </p>
+                    </div>
 
-                <div className="max-w-4xl mx-auto space-y-4">
-                    <AnimatePresence mode="wait">
-                        {displayPublications.map((pub, index) => (
-                            <motion.div
-                                key={index} // Using index as key is acceptable for static lists that don't reorder
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ delay: index < initialCount ? index * 0.1 : 0 }}
-                                className="bg-white p-5 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
-                            >
-                                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                                    <p className="text-slate-800 text-sm leading-relaxed font-medium">
-                                        {pub.citation}
-                                    </p>
-                                    {pub.url && (
-                                        <Link href={pub.url} target="_blank" className="shrink-0 text-teal-600 hover:text-teal-800 flex items-center gap-1 text-xs font-bold uppercase tracking-wide">
-                                            Paper <ArrowUpRight className="w-3 h-3" />
-                                        </Link>
-                                    )}
-                                </div>
-                            </motion.div>
-                        ))}
-                    </AnimatePresence>
-                </div>
+                    <div className="max-w-4xl mx-auto space-y-4">
+                        <AnimatePresence mode="wait">
+                            {displayPublications.map((pub, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: index < initialCount ? index * 0.1 : 0 }}
+                                    className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+                                >
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                                        <p className="text-slate-800 text-sm leading-relaxed font-medium">
+                                            {pub.citation}
+                                        </p>
+                                        {pub.url && (
+                                            <Link href={pub.url} target="_blank" className="shrink-0 text-teal-600 hover:text-teal-800 flex items-center gap-1 text-xs font-bold uppercase tracking-wide">
+                                                Paper <ArrowUpRight className="w-3 h-3" />
+                                            </Link>
+                                        )}
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
+                    </div>
 
-                <div className="mt-10 text-center">
-                    <Button
-                        onClick={() => setShowAll(!showAll)}
-                        variant="outline"
-                        className="border-teal-200 text-teal-700 hover:bg-teal-50 gap-2"
-                    >
-                        {showAll ? (
-                            <>Show Less <ChevronUp className="w-4 h-4" /></>
-                        ) : (
-                            <>Show All Publications <ChevronDown className="w-4 h-4" /></>
-                        )}
-                    </Button>
+                    <div className="mt-10 text-center">
+                        <Button
+                            onClick={() => setShowAll(!showAll)}
+                            variant="outline"
+                            className="bg-white border-teal-200 text-teal-700 hover:bg-teal-50 gap-2"
+                        >
+                            {showAll ? (
+                                <>Show Less <ChevronUp className="w-4 h-4" /></>
+                            ) : (
+                                <>Show All Publications <ChevronDown className="w-4 h-4" /></>
+                            )}
+                        </Button>
+                    </div>
                 </div>
             </div>
         </section>

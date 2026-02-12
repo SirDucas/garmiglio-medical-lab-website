@@ -34,63 +34,74 @@ const tools = [
 
 export function Software() {
     return (
-        <section id="software" className="py-24 bg-slate-900 text-white">
+        <section id="software" className="py-24 bg-white">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold mb-4"
-                    >
-                        Software & <span className="text-teal-400">Tools</span>
-                    </motion.h2>
-                    <p className="text-slate-400 max-w-2xl mx-auto">
-                        Open source computational tools developed by our lab for the scientific community.
-                    </p>
-                </div>
+                <div className="bg-slate-900 rounded-3xl p-8 md:p-12 overflow-hidden relative">
+                    {/* Background decoration */}
+                    <div className="absolute top-0 right-0 p-12 opacity-10 pointer-events-none">
+                        <div className="w-64 h-64 bg-teal-500 rounded-full blur-3xl"></div>
+                    </div>
 
-                <div className="space-y-12">
-                    {tools.map((tool, index) => (
-                        <motion.div
-                            key={index}
+                    <div className="text-center mb-12 relative z-10">
+                        <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 flex flex-col md:flex-row gap-8 items-center"
+                            className="text-3xl md:text-4xl font-bold mb-4 text-white"
                         >
-                            <div className="w-full md:w-1/3 aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-700">
-                                <img src={tool.image} alt={tool.name} className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                            </div>
+                            Software & <span className="text-teal-400">Tools</span>
+                        </motion.h2>
+                        <p className="text-slate-400 max-w-2xl mx-auto">
+                            Open source computational tools developed by our lab for the scientific community.
+                        </p>
+                    </div>
 
-                            <div className="flex-1">
-                                <div className="flex items-baseline gap-3 mb-2">
-                                    <h3 className="text-2xl font-bold text-white">{tool.name}</h3>
-                                    <span className="text-teal-400 text-sm font-mono hidden sm:inline-block">{tool.full_name}</span>
+                    <div className="space-y-12 relative z-10">
+                        {tools.map((tool, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="bg-slate-800/80 rounded-2xl p-6 md:p-8 border border-slate-700 flex flex-col md:flex-row gap-8 items-center backdrop-blur-sm"
+                            >
+                                <div className="w-full md:w-1/3 aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-700 group">
+                                    <img
+                                        src={tool.image}
+                                        alt={tool.name}
+                                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                                    />
                                 </div>
-                                <p className="text-slate-300 mb-6 leading-relaxed">
-                                    {tool.description}
-                                </p>
-                                <div className="flex flex-wrap gap-4">
-                                    {tool.link && (
-                                        <Link href={tool.link} target="_blank">
-                                            <Button variant="primary" size="sm" className="gap-2 bg-teal-600 hover:bg-teal-700 border-none">
-                                                <Github className="w-4 h-4" /> Code / App
-                                            </Button>
-                                        </Link>
-                                    )}
-                                    {tool.paper && (
-                                        <Link href={tool.paper} target="_blank">
-                                            <Button variant="outline" size="sm" className="gap-2 text-teal-300 border-teal-500/30 hover:bg-teal-500/10 hover:text-white">
-                                                <ExternalLink className="w-4 h-4" /> Read Paper
-                                            </Button>
-                                        </Link>
-                                    )}
+
+                                <div className="flex-1">
+                                    <div className="flex items-baseline gap-3 mb-2 flex-wrap">
+                                        <h3 className="text-2xl font-bold text-white">{tool.name}</h3>
+                                        <span className="text-teal-400 text-sm font-mono">{tool.full_name}</span>
+                                    </div>
+                                    <p className="text-slate-300 mb-6 leading-relaxed">
+                                        {tool.description}
+                                    </p>
+                                    <div className="flex flex-wrap gap-4">
+                                        {tool.link && (
+                                            <Link href={tool.link} target="_blank">
+                                                <Button variant="primary" size="sm" className="gap-2 bg-teal-600 hover:bg-teal-700 border-none">
+                                                    <Github className="w-4 h-4" /> Code / App
+                                                </Button>
+                                            </Link>
+                                        )}
+                                        {tool.paper && (
+                                            <Link href={tool.paper} target="_blank">
+                                                <Button variant="outline" size="sm" className="gap-2 text-teal-300 border-teal-500/30 hover:bg-teal-500/10 hover:text-white bg-transparent">
+                                                    <ExternalLink className="w-4 h-4" /> Read Paper
+                                                </Button>
+                                            </Link>
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
