@@ -58,12 +58,16 @@ export function Projects() {
                             className="flex flex-col bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
                         >
                             {project.image ? (
-                                <div className="h-48 overflow-hidden bg-slate-200">
-                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" />
+                                <div className="h-40 bg-white flex items-center justify-center p-4 overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="max-w-full max-h-full object-contain transition-transform hover:scale-105 duration-500"
+                                    />
                                 </div>
                             ) : (
-                                <div className="h-48 bg-gradient-to-br from-teal-50 to-slate-200 flex items-center justify-center">
-                                    <Dna className="w-12 h-12 text-teal-300" />
+                                <div className="h-40 bg-gradient-to-br from-teal-50 to-slate-100 flex items-center justify-center">
+                                    <Dna className="w-10 h-10 text-teal-300" />
                                 </div>
                             )}
 
