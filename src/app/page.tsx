@@ -33,12 +33,15 @@ export default function MaintenancePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6 border-t border-slate-100">
-            <div className="flex items-center gap-3 text-slate-700">
-              <Mail className="w-5 h-5 text-teal-600" />
-              <div className="text-left">
+            <div className="flex items-start gap-3 text-slate-700">
+              <Mail className="w-5 h-5 text-teal-600 mt-1" />
+              <div className="text-left flex flex-col gap-1">
                 <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Inquiries</p>
-                <a href="mailto:si.migliozzi@gmail.com" className="text-sm font-medium hover:text-teal-600 transition-colors">
-                  si.migliozzi@gmail.com
+                <a href="mailto:smigliozzi@tgen.org" className="text-sm font-medium hover:text-teal-600 transition-colors">
+                  smigliozzi@tgen.org
+                </a>
+                <a href="mailto:lgarofano@tgen.org" className="text-sm font-medium hover:text-teal-600 transition-colors">
+                  lgarofano@tgen.org
                 </a>
               </div>
             </div>
