@@ -12,7 +12,7 @@ export function Hero() {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-900/80 via-slate-900/80 to-slate-900/90 z-10" />
                 <img
-                    src="/images/Home_img1_new.png"
+                    src="/images/Hero_img_updated.png"
                     alt="GarMiglioLab Research"
                     className="w-full h-full object-cover"
                 />

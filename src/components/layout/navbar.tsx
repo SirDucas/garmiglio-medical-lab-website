@@ -43,7 +43,7 @@ export function Navbar() {
                     <div className="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform">
                         GM
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-1">
                         <span className={cn("text-xl font-bold leading-none", scrolled ? "text-slate-900" : "text-white")}>
                             GarMiglioLab
                         </span>
