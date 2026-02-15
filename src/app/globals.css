@@ -4,10 +4,22 @@
   --font-sans: var(--font-inter);
   --font-heading: var(--font-plus-jakarta);
   
-  --color-primary: #0f766e; /* teal-700 */
+  --color-primary: #84B494; /* sage-500 */
   --color-primary-foreground: #ffffff;
   --color-secondary: #f1f5f9; /* slate-100 */
-  --color-accent: #0ea5e9; /* sky-500 */
+  --color-accent: #B8D8C0; /* sage-300 */
+
+  /* Override teal palette with sage green shades */
+  --color-teal-50: #F2F7F3;
+  --color-teal-100: #E5F0E8;
+  --color-teal-200: #CCE1D1;
+  --color-teal-300: #B8D8C0;
+  --color-teal-400: #9EC6AA;
+  --color-teal-500: #84B494;
+  --color-teal-600: #6A9679;
+  --color-teal-700: #54775F;
+  --color-teal-800: #3E5846;
+  --color-teal-900: #28392D;
 }
 
 @layer base {

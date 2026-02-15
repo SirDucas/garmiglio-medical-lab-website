@@ -10,7 +10,7 @@ export function Hero() {
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-teal-900/80 via-slate-900/80 to-slate-900/90 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-900/40 via-slate-900/40 to-slate-900/50 z-10" />
                 <img
                     src="/images/Hero_img_updated.png"
                     alt="GarMiglioLab Research"

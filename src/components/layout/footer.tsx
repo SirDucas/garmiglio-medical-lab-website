@@ -27,7 +27,7 @@ export function Footer() {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-start gap-3">
                             <MapPin className="w-5 h-5 text-teal-500 shrink-0" />
-                            <span>123 Research Drive,<br />Boston, MA 02115, USA</span>
+                            <span>The Translational Genomics Research Institute (TGen)<br />445 N 5th St 5th Floor,<br />Phoenix, AZ 85004, USA</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <Phone className="w-5 h-5 text-teal-500 shrink-0" />
