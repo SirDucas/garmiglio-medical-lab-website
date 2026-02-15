@@ -18,13 +18,13 @@ const projects = [
     {
         title: "Role of neurons-cancer cross-talk in non-CNS tumor progression",
         description: "We showed the existence of a tumor neuronal-like program in lung and breast cancer. We test whether the innervation of non-CNS tumors (gastrointestinal, pancreatic, prostate) by peripheral nerves regulates cancer progression, seeking molecular mechanisms driving neuron-cancer interactions.",
-        image: "/images/Projects_img2.png",
+        image: "/images/Projects_img3.png",
         tags: ["Neuro-Oncology", "Cross-talk", "Non-CNS"]
     },
     {
         title: "Reconstructing spatiotemporal proteomic mosaicism in pediatric brain tumors",
         description: "We have shown an evolutionary trajectory of distinct tumor cellular states and TME cell subpopulations from low to high-grade pediatric tumors. We seek to identify critical post-translational regulators (kinases, ubiquitin ligases) responsible for the biological make-up of children's brain tumors.",
-        image: null, // No 3rd image provided
+        image: "/images/Projects_img2.png",
         tags: ["Pediatric", "Proteomics", "Spatio-temporal"]
     }
 ];

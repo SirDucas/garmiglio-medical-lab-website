@@ -62,8 +62,8 @@ export function Contact() {
 
                             <div className="my-6 p-4 bg-teal-50 rounded-lg border-l-4 border-teal-500">
                                 <h4 className="font-bold text-teal-800 mb-2">Contacts</h4>
-                                <a href="mailto:si.migliozzi@gmail.com" className="block text-slate-700 hover:text-teal-700">si.migliozzi@gmail.com</a>
-                                <a href="mailto:lucianogarofano88@gmail.com" className="block text-slate-700 hover:text-teal-700">lucianogarofano88@gmail.com</a>
+                                <a href="mailto:smigliozzi@tgen.org" className="block text-slate-700 hover:text-teal-700">smigliozzi@tgen.org</a>
+                                <a href="mailto:lgarofano@tgen.org" className="block text-slate-700 hover:text-teal-700">lgarofano@tgen.org</a>
                             </div>
 
                             <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Lab’s mission and values</h3>

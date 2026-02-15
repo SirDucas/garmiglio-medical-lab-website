@@ -45,7 +45,7 @@ export function Hero() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed"
                     >
-                        Enlightening the molecular mechanisms of cancer progression, metastasis, and resistance to therapy in brain cancer and solid tumors.
+                        Deciphering the molecular mechanisms of cancer progression, metastasis, and resistance to therapy in brain cancer and solid tumors.
                     </motion.p>
 
                     <motion.div

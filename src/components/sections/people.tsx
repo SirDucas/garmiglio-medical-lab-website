@@ -29,21 +29,21 @@ export function People() {
                         className="flex flex-col md:flex-row gap-8 items-start"
                     >
                         <div className="shrink-0 w-full md:w-48 aspect-[3/4] bg-slate-200 rounded-xl overflow-hidden shadow-md">
-                            <img src="/images/People_lucianogarofano.png" alt="Luciano Garofano, PhD" className="w-full h-full object-cover" />
+                            <img src="/images/People_lucianogarofano_updated.jpg" alt="Luciano Garofano, PhD" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Luciano Garofano, PhD</h3>
                             <p className="text-teal-700 font-medium mb-4">Principal Investigator</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p className="mb-2">
-                                    Dr. Luciano Garofano earned his Ph.D. in Bioinformatics in 2019 at the University of Sannio, Italy.
-                                    His research focuses on machine learning approaches for reconstructing gene- and protein- regulatory networks
-                                    to unravel biological mechanisms in solid tumors.
+                                    Dr. Luciano Garofano earned his Ph.D. in Bioinformatics in 2019 at the <strong>University of Sannio, Italy</strong>.
+                                    His PhD focused on the development of machine learning approaches for the reconstruction of gene- and protein- regulatory networks
+                                    to unravel the <strong>heterogenous biological and genetic mechanisms</strong> underlying distinct subgroups of solid tumors.
                                 </p>
                                 <p>
-                                    Mentored by Dr. Antonio Iavarone during his postdoc, Dr. Garofano designed computational tools like
-                                    <strong> RGBM</strong>, <strong>scBiPaD</strong>, and <strong>SPHINKs</strong>, identifying key therapeutic
-                                    vulnerabilities in adult and pediatric brain tumors.
+                                    During his post-doctoral journey mentored by Dr. Antonio Iavarone, Dr. Garofano has designed several computational tools including
+                                    <strong> RGBM</strong> (Regularized Gradient Boosting Machine), <strong>scBiPaD</strong> (single-cell Biological Pathway Deconvolution), and <strong>SPHINKs</strong> (Substrate PHophosite-based Inference for Network of Kinases), and informed key therapeutic
+                                    vulnerabilities and functionally-relevant features of adult and pediatric brain tumors.
                                 </p>
                             </div>
                         </div>
@@ -58,19 +58,20 @@ export function People() {
                         className="flex flex-col md:flex-row gap-8 items-start"
                     >
                         <div className="shrink-0 w-full md:w-48 aspect-[3/4] bg-slate-200 rounded-xl overflow-hidden shadow-md">
-                            <img src="/images/People_simonamigliozzi.png" alt="Simona Migliozzi, PhD" className="w-full h-full object-cover" />
+                            <img src="/images/People_simonamigliozzi_updated.jpg" alt="Simona Migliozzi, PhD" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Simona Migliozzi, PhD</h3>
                             <p className="text-teal-700 font-medium mb-4">Principal Investigator</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p className="mb-2">
-                                    Assistant Professor at TGen. Native of Italy, she completed her Ph.D. in Molecular Oncology at University of Catanzaro (2019).
-                                    She focuses on computational approaches to integrate NGS data for solid tumor characterization (glioma, ovarian, colon, breast).
+                                    Assistant Professor at The <strong>Translational Genomics Research Institute (TGen)</strong>. Native of Italy, she completed her Ph.D. in <strong>Molecular Oncology</strong> at <strong>University of Catanzaro (2019)</strong>.
+                                    Her dissertation work focused on the development of computational approaches to integrate NGS data for the <strong>molecular characterization</strong> of different subtypes of solid tumors (glioma, ovarian, colon, breast cancers).
                                 </p>
                                 <p>
-                                    As a postdoctoral fellow in Dr. Iavarone’s lab (Columbia/Miami), she developed machine learning approaches
-                                    using single cell and multi-omics data to dissect glioblastoma heterogeneity.
+                                    In 2019, she joined Dr. Antonio Iavarone’s laboratory at <strong>Columbia University</strong> and <strong>University of Miami</strong> as a postdoctoral fellow.
+                                    Her work focused on developing machine learning approaches using single cell and multi-omics data to dissect heterogeneity of <strong>glioblastoma multiforme</strong>
+                                    and identify clinically-relevant subtypes.
                                 </p>
                             </div>
                         </div>
