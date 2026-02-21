@@ -18,6 +18,7 @@ export function People() {
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Led by principal investigators dedicated to precision oncology and computational biology.
                     </p>
+
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
@@ -36,14 +37,14 @@ export function People() {
                             <p className="text-teal-700 font-medium mb-4">Principal Investigator</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p className="mb-2">
-                                    Dr. Luciano Garofano earned his Ph.D. in Bioinformatics in 2019 at the <strong>University of Sannio, Italy</strong>.
-                                    His PhD focused on the development of machine learning approaches for the reconstruction of gene- and protein- regulatory networks
-                                    to unravel the <strong>heterogenous biological and genetic mechanisms</strong> underlying distinct subgroups of solid tumors.
+                                    Luciano Garofano is an Assistant Professor at The <strong>Translational Genomics Research Institute (TGen)</strong>.
+                                    He earned his Ph.D. in Bioinformatics in 2019 at the <strong>University of Sannio, Italy</strong>. His PhD focused on the development of machine learning approaches
+                                    for the <strong>reconstruction of gene- and protein-regulatory networks</strong> to unravel the heterogenous biological and genetic mechanisms underlying distinct
+                                    subgroups of solid tumors.
                                 </p>
                                 <p>
-                                    During his post-doctoral journey mentored by Dr. Antonio Iavarone, Dr. Garofano has designed several computational tools including
-                                    <strong> RGBM</strong> (Regularized Gradient Boosting Machine), <strong>scBiPaD</strong> (single-cell Biological Pathway Deconvolution), and <strong>SPHINKs</strong> (Substrate PHophosite-based Inference for Network of Kinases), and informed key therapeutic
-                                    vulnerabilities and functionally-relevant features of adult and pediatric brain tumors.
+                                    During his post-doctoral journey mentored by Dr. Antonio Iavarone, Dr. Garofano has designed several computational tools, including <strong>RGBM</strong> (Regularized Gradient Boosting Machine), <strong>scBiPaD</strong> (single-cell Biological Pathway Deconvolution) and <strong>SPHINKs</strong> (Substrate PHosphosite-based Inference for Network of Kinases)
+                                    and informed key therapeutic vulnerabilities and functionally-relevant features of adult and pediatric brain tumors.
                                 </p>
                             </div>
                         </div>

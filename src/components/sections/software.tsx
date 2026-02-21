@@ -28,7 +28,7 @@ const tools = [
         description: "Probabilistic classifier taking bulk tumor RNA-seq data to calculate probability of belonging to functional subtypes (GBM, lung, breast, pediatric).",
         link: "https://lucgar88.shinyapps.io/GBMclassifier",
         paper: "https://rdcu.be/e3mgD",
-        image: "/images/Software&Tools_img2.png"
+        image: "/images/tumor_classifier.png"
     }
 ];
 
