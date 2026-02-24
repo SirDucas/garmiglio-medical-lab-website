@@ -38,7 +38,7 @@ export function People() {
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p className="mb-2">
                                     Luciano Garofano is an Assistant Professor at The <strong>Translational Genomics Research Institute (TGen)</strong>.
-                                    He earned his Ph.D. in Bioinformatics in 2019 at the <strong>University of Sannio, Italy</strong>. His PhD focused on the development of machine learning approaches
+                                    He earned his Ph.D. in Bioinformatics in 2017 at the <strong>University of Sannio, Italy</strong>. His PhD focused on the development of machine learning approaches
                                     for the <strong>reconstruction of gene- and protein-regulatory networks</strong> to unravel the heterogenous biological and genetic mechanisms underlying distinct
                                     subgroups of solid tumors.
                                 </p>
