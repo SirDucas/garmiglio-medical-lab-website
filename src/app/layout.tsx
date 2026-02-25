@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta" });
 
 export const metadata: Metadata = {
-  title: "GarMiglioLab | Advanced Medical Research",
-  description: "Private scientific research laboratory specializing in oncology, neurology, and precision medicine.",
+  title: "GarMiglio Lab | computational cancer biology",
+  description: "Research Lab interested in cancer neuroscience, computational biology and precision medicine",
   openGraph: {
-    title: "GarMiglioLab | Advanced Medical Research",
-    description: "Private scientific research laboratory specializing in oncology, neurology, and precision medicine.",
+    title: "GarMiglio Lab | computational cancer biology",
+    description: "Research Lab interested in cancer neuroscience, computational biology and precision medicine",
     type: "website",
     locale: "en_US",
   },

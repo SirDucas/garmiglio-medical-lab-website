@@ -35,7 +35,11 @@ export function Footer() {
                         </li>
                         <li className="flex items-center gap-3">
                             <Mail className="w-5 h-5 text-teal-500 shrink-0" />
-                            <span>info@garmigliolab.com</span>
+                            <a href="mailto:smigliozzi@tgen.org" className="hover:text-white transition-colors">smigliozzi@tgen.org</a>
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <Mail className="w-5 h-5 text-teal-500 shrink-0" />
+                            <a href="mailto:lgarofano@tgen.org" className="hover:text-white transition-colors">lgarofano@tgen.org</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +54,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="container mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-                &copy; {new Date().getFullYear()} GarMiglioLab LLC - All rights reserved.
+                &copy; {new Date().getFullYear()} GarMiglioLab - All rights reserved.
             </div>
         </footer>
     );
