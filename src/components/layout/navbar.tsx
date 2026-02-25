@@ -48,7 +48,7 @@ export function Navbar() {
                             GarMiglioLab
                         </span>
                         <span className={cn("text-xs leading-none opacity-80", scrolled ? "text-slate-500" : "text-slate-200")}>
-                            Precision Medicine
+                            Computational Cancer Biology
                         </span>
                     </div>
                 </Link>
