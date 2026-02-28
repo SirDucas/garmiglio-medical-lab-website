@@ -3,22 +3,44 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const highlightedPublications = [
+    {
+        title: "Parsing glioblastoma heterogeneity for redefined classification",
+        citation: "Garofano L.*, Migliozzi S.*, Oh*, et al., Nature Cancer (2021)",
+        description: "Analysis of glioblastoma heterogeneity can classify the disease according to four fundamental functional properties, depicted here as branches of one tree. Genetic alterations common to these four subtypes are within the glioblastoma trunk, but each subtype diverges through distinct genetic lesions and gene-expression programs that incorporate prognostic and therapeutic attributes.",
+        image: "/images/11c_CoverPage.png",
+        imageCaption: "Image: Created by Anna Lasorella and Simona Migliozzi and inspired by work of Yiqi Li (Four season trees). Cover Design: Allen Beattie.",
+        url: "https://www.nature.com/natcancer/volumes/2/issues/2",
+        seeAlso: "Hubert, C.G., Lathia, J.D. Seeing the GBM diversity spectrum. Nat Cancer 2, 135–137 (2021).",
+        seeAlsoUrl: "https://doi.org/10.1038/s43018-021-00176-x"
+    },
+    {
+        title: "Identifying master kinases in cancer with integrative multi-omics",
+        citation: "Migliozzi S.*, Oh*, Hasanain*, Garofano L.*, et al., Nature Cancer (2023)",
+        description: "A kinase–substrate–phosphosite network interactome identifies master kinases specific for glioblastoma subtypes, as potential therapeutic targets.",
+        image: "/images/14b_CoverPage.png",
+        imageCaption: "Image: Ella Maru Studio. Cover design: Allen Beattie",
+        url: "https://www.nature.com/natcancer/volumes/4/issues/2",
+        seeAlso: "Master kinases extracted from proteogenomic networks in glioblastoma drive cancer subtypes. Nat Cancer 4, 159–160 (2023).",
+        seeAlsoUrl: "https://doi.org/10.1038/s43018-022-00511-w"
+    },
+    {
+        title: "Restraint of cancer cell plasticity by spatial homotypic clustering",
+        citation: "Migliozzi S.*, Adabbo B.*, Garofano L.*, et al. Cancer Cell (2025)",
+        description: "Among carnivorous plants, two wilted heads of daisies embody homotypic clusters of malignant cells, still holding a single identity despite decline. Around them, the open traps of insect-eating plants evoke dispersed agglomerates in which identity dissolves and invasive programs emerge. The juxtaposition of a fading but coherent mass with predatory heterogeneity symbolizes the finding of Migliozzi et al. that the spatial self organization of malignant cell subtypes is not neutral but can preserve or release the plastic potential through which glioblastoma advances.",
+        image: "/images/cover_cancer_cell_2.png",
+        imageCaption: "Graphic illustrations by © Ella Maru Studio, Inc.",
+        url: "https://www.cell.com/cancer-cell/issue?pii=S1535-6108(24)X0013-6",
+        seeAlso: "Hara, Toshiro, and Cong Ma. \"Spatial patterns of glioblastoma.\" Cancer Cell 43.12 (2025): 2189-2190.",
+        seeAlsoUrl: ""
+    }
+];
+
 const publications = [
-    {
-        citation: "Migliozzi S.*, Adabbo B.*, Wu F. *, Garofano L.*, Davila P., Komotar J.R., Ivan E.M., Shah A.H., Cortes Bilbao D., Boone M.M., De La Fuente I.M., Gultekin H.S., Ceccarelli M., Iavarone A., Lasorella A. Restraint of cancer cell plasticity by spatial homotypic clustering. Cancer Cell (2025)",
-        url: "https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00366-6"
-    },
-    {
-        citation: "Garofano L.*, Migliozzi S.*, […], et al. Pathway-based classification of glioblastoma uncovers a mitochondrial subtype with therapeutic vulnerabilities. Nature Cancer (2021)",
-        url: "https://www.nature.com/articles/s43018-020-00159-4"
-    },
-    {
-        citation: "Migliozzi S.*, Oh Y.T.*, Mohammad H.*, Garofano L.*, […], et al. Integrative multi-omics networks identify PKCd and DNA-PK as master kinases of glioblastoma subtypes and guide targeted cancer therapy. Nature Cancer (2023)",
-        url: "https://www.nature.com/articles/s43018-022-00510-x"
-    },
     {
         citation: "Kim K.H.*, Migliozzi S.*, […], Garofano L., […], et al. Integrated proteogenomic characterization of glioblastoma evolution. Cancer Cell (2024)",
         url: "https://www.cell.com/cancer-cell/fulltext/S1535-6108(23)00443-9"
@@ -132,6 +154,62 @@ export function Publications() {
                         </p>
                     </div>
 
+                    <div className="mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {highlightedPublications.map((pub, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group"
+                            >
+                                <div className="relative w-full aspect-[3/4] border-b border-slate-100 bg-slate-50 overflow-hidden">
+                                    <Image
+                                        src={pub.image}
+                                        alt={pub.title}
+                                        fill
+                                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                                        sizes="(max-width: 1024px) 100vw, 33vw"
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-lg font-bold text-slate-900 mb-3 leading-tight">
+                                        {pub.title}
+                                    </h3>
+                                    <p className="text-sm text-slate-600 mb-6 flex-grow leading-relaxed">
+                                        {pub.description}
+                                    </p>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <p className="text-xs font-semibold text-slate-800 mb-1 leading-snug">{pub.citation}</p>
+                                            <Link href={pub.url} target="_blank" className="text-teal-600 hover:text-teal-800 flex items-center gap-1 text-[10px] uppercase font-bold tracking-wide mt-2">
+                                                Link <ArrowUpRight className="w-3 h-3" />
+                                            </Link>
+                                        </div>
+                                        {pub.imageCaption && (
+                                            <div className="text-[10px] text-slate-500 leading-relaxed border-t border-slate-100 pt-3 italic">
+                                                {pub.imageCaption}
+                                            </div>
+                                        )}
+                                        {pub.seeAlso && (
+                                            <div className="text-[10px] text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                                <span className="block mb-1 font-bold text-slate-800 uppercase tracking-wider text-[9px]">See also:</span>
+                                                {pub.seeAlso}
+                                                {pub.seeAlsoUrl && (
+                                                    <Link href={pub.seeAlsoUrl} target="_blank" className="block mt-1 text-teal-600 hover:text-teal-800 break-all font-medium">
+                                                        {pub.seeAlsoUrl}
+                                                    </Link>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">More Publications</h3>
                     <div className="max-w-4xl mx-auto space-y-4">
                         <AnimatePresence mode="wait">
                             {displayPublications.map((pub, index) => (
