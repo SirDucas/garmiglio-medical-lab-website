@@ -30,7 +30,7 @@ export function People() {
                         className="flex flex-col md:flex-row gap-8 items-start"
                     >
                         <div className="shrink-0 w-full md:w-48 aspect-[3/4] bg-slate-200 rounded-xl overflow-hidden shadow-md">
-                            <img src="/images/People_lucianogarofano_updated.jpg" alt="Luciano Garofano, PhD" className="w-full h-full object-cover" />
+                            <img src="/images/People_lucianogarofano_800.jpg" alt="Luciano Garofano, PhD" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Luciano Garofano, PhD</h3>
@@ -59,7 +59,7 @@ export function People() {
                         className="flex flex-col md:flex-row gap-8 items-start"
                     >
                         <div className="shrink-0 w-full md:w-48 aspect-[3/4] bg-slate-200 rounded-xl overflow-hidden shadow-md">
-                            <img src="/images/People_simonamigliozzi_updated.jpg" alt="Simona Migliozzi, PhD" className="w-full h-full object-cover" />
+                            <img src="/images/People_simonamigliozzi_800.jpg" alt="Simona Migliozzi, PhD" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Simona Migliozzi, PhD</h3>
