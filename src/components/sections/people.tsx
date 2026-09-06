@@ -89,10 +89,10 @@ export function People() {
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Siarhei Hladyshau</h3>
-                            <p className="text-teal-700 font-medium mb-4">Postdoctoral Researcher</p>
+                            <p className="text-teal-700 font-medium mb-4">Postdoctoral Research Scientist</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p>
-                                    Siarhei Hladyshau is a postdoctoral researcher in the GarMiglio Lab at TGen, interested in systems biology and computational methods to uncover the complexity of biological networks. He studies glioblastoma using multiple data modalities, focusing on inferring gene regulatory networks from single-cell spatial transcriptomics and linking transcription factor activity to identify master regulators that sustain GBM transcriptional subtypes, shape the tumor microenvironment, and drive tumor invasion and progression. As a former postdoctoral researcher at St. Jude Children&#x27;s Research Hospital, he worked on information-theoretic methods for regulatory network inference and hidden driver identification (scMINER). He characterized epigenetic reprogramming in pediatric cancers using single-cell multiomics. He completed his Ph.D. in Bioinformatics at the Georgia Institute of Technology, developing integrative models of cell morphodynamics to uncover mechanisms of Rho-GTPase signaling and cytoskeletal regulation.
+                                    Siarhei Hladyshau is a postdoctoral research scientist in the GarMiglio Lab at TGen, interested in systems biology and computational methods to uncover the complexity of biological networks. He studies glioblastoma using multiple data modalities, focusing on inferring <strong>gene regulatory networks from single-cell spatial transcriptomics</strong> and linking transcription factor activity to identify master regulators that sustain GBM transcriptional subtypes, shape the tumor microenvironment, and drive tumor invasion and progression. As a former postdoctoral researcher at <strong>St. Jude Children&#x27;s Research Hospital</strong>, he worked on information-theoretic methods for regulatory network inference and hidden driver identification (<strong>scMINER</strong>). He characterized epigenetic reprogramming in pediatric cancers using single-cell multiomics. He completed his Ph.D. in Bioinformatics at the <strong>Georgia Institute of Technology</strong>, developing integrative models of cell morphodynamics to uncover mechanisms of Rho-GTPase signaling and cytoskeletal regulation.
                                 </p>
                             </div>
                         </div>
@@ -109,10 +109,10 @@ export function People() {
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-slate-900">Erika Hubbard, PhD</h3>
-                            <p className="text-teal-700 font-medium mb-4">Postdoc Research Fellow</p>
+                            <p className="text-teal-700 font-medium mb-4">Postdoctoral Research Scientist</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p>
-                                    Erika is a native of Virginia where she trained in biomedical engineering at UVA and bioinformatics/immunology through her work with a local startup, deconvoluting heterogeneity in lupus to further molecular insights that ultimately improve patient care and management. After completing her PhD in 2026 at GWU, Erika joins the GarMiglio Lab as a Postdoc Research Fellow and is working to uncover molecular mechanisms driving tumor cellular programs characteristic of brain-tropic cancers and brain metastases. Outside of the lab, she enjoys concerts, training in JKA shotokan karate, and bringing joy to others through an encouraging word or baked goods.
+                                    Erika is a native of Virginia where she trained in <strong>biomedical engineering at UVA</strong> and <strong>bioinformatics/immunology</strong> through her work with a local startup, deconvoluting heterogeneity in lupus to further molecular insights that ultimately improve patient care and management. After completing her <strong>PhD in 2026 at GWU</strong>, Erika joins the GarMiglio Lab as a Postdoctoral Research Scientist and is working to uncover molecular mechanisms driving tumor cellular programs characteristic of <strong>brain-tropic cancers and brain metastases</strong>. Outside of the lab, she enjoys concerts, training in JKA shotokan karate, and bringing joy to others through an encouraging word or baked goods.
                                 </p>
                             </div>
                         </div>
@@ -128,10 +128,11 @@ export function People() {
                             <img src="/images/People_matthewmcclure.jpg" alt="Matthew McClure" className="w-full h-full object-cover" />
                         </div>
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-4">Matthew McClure</h3>
+                            <h3 className="text-2xl font-bold text-slate-900">Matthew McClure</h3>
+                            <p className="text-teal-700 font-medium mb-4">Bioinformatician</p>
                             <div className="prose prose-sm text-slate-600 text-justify">
                                 <p>
-                                    Matthew holds a Master’s degree in Biological Data Science with an emphasis in Bioinformatics and a Bachelor’s degree in Statistics. His training combines a strong foundation in statistics with hands-on experience analyzing proteomic and metabolomic data. Matthew is developing statistical models to integrate multiomics data with radiomics and clinical variables to assess whether tumor cellular states and/or cell types in tumor microenvironment are associated with distinct tumor conditions and types.
+                                    Matthew holds a <strong>Master’s degree in Biological Data Science</strong> with an emphasis in <strong>Bioinformatics and a Bachelor’s degree in Statistics</strong>. His training combines a strong foundation in statistics with hands-on experience analyzing <strong>proteomic and metabolomic data</strong>. Matthew is developing statistical models to <strong>integrate multiomics data with radiomics and clinical variables</strong> to assess whether tumor cellular states and/or cell types in tumor microenvironment are associated with distinct tumor conditions and types.
                                 </p>
                             </div>
                         </div>
